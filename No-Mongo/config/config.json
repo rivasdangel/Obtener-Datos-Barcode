@@ -1,0 +1,21 @@
+{
+	"port": 9004,
+	"env": "development",
+	"logsPath": "./logs",
+	"data": {
+		"idDevice": 12,
+		"idApp": 4,
+		"idLine": "Versaline",
+		"db":{
+			"barcodeBoxUrl": "mongodb://localhost:27017/barcodeboxdb"
+		},
+		"processorBox": {
+			"url": "http://192.168.10.111:8888/",
+			"wsBarcodeSendData": "barcodebox/save/data"
+		},
+		"notifier": {
+			"enabled": false,
+			"url": "http://192.168.10.111:1306/ServicePulse.svc/SaveLogError"
+		}
+	}
+}

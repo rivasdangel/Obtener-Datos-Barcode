@@ -1,0 +1,8 @@
+{
+	"appenders": [{
+		"type": "file",
+		"filename": "app.log",
+		"maxLogSize": 20000000,
+	    "backups": 3
+	}]
+}
